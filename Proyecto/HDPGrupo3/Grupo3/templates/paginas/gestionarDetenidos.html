@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <title>Gestionar detenidos</title>
+        <style>
+            .back{
+                justify-content: space-between;
+                flex-direction: column;
+                height: 100vh;
+                display: flex;
+            }
+            .enlace{
+                justify-content: flex-end;
+                display: flex;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center m-4 text-decoration-underline">Detenidos:</h1>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">Buscar detenido</label>
+                </div>
+                <div class="col-7">
+                    <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">DUI</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Estado de Jucio</th>
+                        <th scope="col">Lugar de Detención</th>                       
+                        <th scope="col">Realizar Cambios</th>
+                        <th scope="col">Visualizar información</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">03558816-6</th>
+                            <td>Juan Kevin</td>
+                            <td>Melendez Agreda</td>
+                            <td>Absuelto</td>
+                            <td>Carcel de Mariona</td>
+                            <td> <a href="/modificarInformacion"> <i class="bi bi-send-plus-fill"></i></a></td>
+                            <td> <a href="/visualizarInformacion"> <i class="bi bi-eye"></i></a></td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-3 p-3 d-grid">
+                    <a href="/registrarDetenido"><input type = "button" value = "Agregar Detenido" class="btn btn-info"></a>
+                </div>
+            </div>
+            <div class="back">
+                <a class="enlace" href="/menu"><i class="bi bi-house-door-fill fs-1"></i></a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
